@@ -1,0 +1,414 @@
+@import url(./Gerais.css);
+
+body {
+    background-color: var(--meianoite);
+}
+
+/* GRID */
+
+/* .border {
+    border: 1px solid white;
+} */
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "left main right"
+    "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    padding: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #040f15;
+    border-bottom: 1px solid #071723;
+}
+
+header > div > img {
+    width: 150px;
+}
+
+#left {
+    grid-area: left;
+}
+
+#main {
+    grid-area: main;
+    padding: 30px;
+    border-left: 1px solid #071723;
+    border-right: 1px solid #071723;
+}
+
+#right {
+    grid-area: right;
+}
+
+footer {
+    grid-area: footer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.3;
+    background-color: #040f15;
+    border-top: 1px solid #071723;
+}
+
+/* Header */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 70px;
+    list-style: none;
+    padding: 10px;
+    opacity: 0.5;
+}
+
+.navigation-link {
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navigation-link:hover {
+    color: var(--red);
+}
+
+.navigation-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 60%;
+    height: 1px;
+    background: var(--blue);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.navigation-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+}
+
+/* JOGOS */
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--red);
+}
+
+.IMG-Jogos1 {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--red);
+}
+
+.info-jogos {
+    display: flex;
+    background-color: #071723;
+    border-radius: 10px;
+}
+
+.info-jogos > .p {
+    padding: 30px;
+}
+
+.img > img {
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.img > .SM2000 {
+    width: 250px;
+}
+
+.img > .SM2004 {
+    width: 250px;
+}
+
+.img > .SMWS {
+    width: 250px;
+}
+
+.img > .MSM {
+    width: 250px;
+}
+
+.p > p {
+    font-size: 16px;
+}
+
+.GIF-Jogo1 {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.jogabilidade-gifs {
+    display: flex;
+    gap: 10px;
+}
+
+.jogabilidade-gifs > img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+.rodape {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.IMG-rodape {
+    width: 35px;
+    height: 35px;
+}
+
+.navigation-social2 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigation-social2 svg {
+    width: 25px;
+    height: 25px;
+    transition: all 0.4s;
+}
+
+.navigation-social2 svg:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 480px) {
+
+    *{
+        font-size: 14px;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main {
+        grid-area: main;
+        padding: 20px;
+        border-left: 1px solid #071723;
+        border-right: 1px solid #071723;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        list-style: none;
+        opacity: 0.5;
+    }
+    
+    .navigation-link {
+        font-weight: 0;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: var(--red);
+    }
+
+    .IMG-Jogos1 {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    h3 {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: var(--red);
+    }
+
+    .img > img {
+        width: 100%;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .img > .SM2000 {
+        width: 100%;
+    }
+    
+    .img > .SM2004 {
+        width: 100%;
+    }
+    
+    .img > .SMWS {
+        width: 100%;
+    }
+    
+    .img > .MSM {
+        width: 100%;
+    }
+
+    .info-jogos {
+        display: flex;
+        flex-direction: column;
+        background-color: #071723;
+        border-radius: 10px;
+    }
+    
+    .info-jogos > .p {
+        padding: 20px;
+    }
+    
+    .img > img {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .p > p {
+        font-size: 14px;
+    }
+
+    .jogabilidade-gifs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .jogabilidade-gifs > img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        opacity: 0.3;
+        background-color: #040f15;
+        border-top: 1px solid #071723;
+    }
+
+    .rodape {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .IMG-rodape {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .navigation-social2 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .navigation-social2 svg {
+        width: 20px;
+        height: 20px;
+        transition: all 0.4s;
+    }
+
+    /* Display None */
+
+    #left {
+        display: none;
+    }
+
+    #right {
+        display: none;
+    }
+
+    .rodape > p {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main {
+        grid-area: main;
+        border-left: 1px solid #071723;
+        border-right: 1px solid #071723;
+    }
+
+    .jogabilidade-gifs > img {
+        width: 365px;
+        border-radius: 10px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        opacity: 0.3;
+        background-color: #040f15;
+        border-top: 1px solid #071723;
+    }
+
+    /* Display None */
+
+    #left {
+        display: none;
+    }
+
+    #right {
+        display: none;
+    }
+}
+
+/* FIM */

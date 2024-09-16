@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    color: var(--text)
+}
+
+:root {
+    --text: #BFC4DF;
+    --red: #C02401;
+    --blue: #041281;
+    --blue-body: #020714;
+    --meianoite: #051119;
+    --caféqueimado: #140E0A;
+    --florestanoturna: #121813;
+    --cacau: #191815;
+    --carvao: #282729;
+    --blue-rodape: #02091b;
+    --blue-rodape-botton: #051233;
+}
+
+/* Botão retorno */
+
+.scroll-up {
+    right: 3rem;
+    bottom: -50%;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(29, 29, 31, 0.7);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: bottom .4s, transform .4s;
+}
+  
+.scroll-up:hover {
+    transform: translateY(-.25rem);
+}
+
+._show-scroll {
+    bottom: 3rem;
+}
+  
+@media (max-width: 1199.98px) {
+     
+    .scroll-up {
+      right: 1rem;
+    }
+}
+
+.line {
+    border-bottom: 2px solid var(--text);
+    opacity: 0.1;
+}
+
+.espaco {
+    margin: 25px;
+}

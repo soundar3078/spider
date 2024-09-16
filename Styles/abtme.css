@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0 px;
+	margin: 0 px;
+}
+
+.social{
+	size: 100px;
+}
+
+a {
+	color: #007bff; /* Blue color */
+	text-decoration: none; /* Remove underline */
+}
+
+/* Visited link color */
+a:visited {
+	color: #6c757d; /* Grey color */
+}
+
+/* Link color on hover */
+a:hover {
+	color: #0056b3; /* Darker blue color */
+	text-decoration: underline; /* Underline on hover */
+}
+
+.form-container {
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);	
+	max-width: 400px;
+}
+
+.form-container h2 {
+	margin-top: 0;
+}
+
+.form-container label {
+	width:200px;
+	height:2px;
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+	width: 80%;
+	padding: 10px;
+	margin-bottom: 12px;
+	border: 1px solid #250303;
+	border-radius: 4px;
+}
+
+.form-container button {
+	padding: 10px 20px;
+	background-color: #007bff;
+	border: none;
+	border-radius: 4px;
+	color: #3e0a0a;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.form-container button:hover {
+  color: #f80404;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+
+.alert{
+	width:80%;
+	background:greenyellow;
+	padding:10px 20px;
+	border-radius:5px;
+	text-align:center;
+	font-size:18px;
+	font-weight:900;
+	display:none;
+}
+.about {
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: linear-gradient(-45deg, #732222, #1635d1, #e61212, #fc0505);
+	background-size: 400% 400%;
+	animation: animate 1s infinite alternate;
+}
+.wrapper {
+	text-align: Left; 
+	color: #fff;
+}
+.wrapper h2 {
+	font-size: 5em;
+	margin-bottom: 10px;
+	font-family: "Bebas Neue", sans-serif;
+}
+.wrapper p {
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	font-family: "Montserrat", sans-serif;
+	padding: 0 25px;
+	line-height: 1.5;
+}
+.about-image {
+	max-width: 250px;
+	height: auto;
+	border-radius: 50%;
+	border: 15px groove #fff;
+}
+@keyframes animate {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+@media (min-width: 768px) {
+	.wrapper {
+		max-width: 600px;
+	}
+}
+@media (min-width: 992px) {
+	.wrapper {
+		max-width: 800px;
+	}
+}
