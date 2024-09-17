@@ -139,7 +139,7 @@ footer {
 
 .navigation-link:hover {
     color: var(--red);
-    font-size: 30px;
+   
 }
 
 .navigation-link::after {
