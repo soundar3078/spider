@@ -1,37 +1,33 @@
-Projeto Fan-Site do Homem-Aranha
+Spider-Man Fan Site Project
 
-- Descrição do projeto:
+    Project description:
 
-O projeto foi feito com o o intuito avaliativo.
+The project was carried out with evaluative purposes.
 
-Consiste num site sobre o personagem fictício Homem-Aranha, abordando suas características e adaptações.
+It consists of a website about the fictional character Spider-Man, covering his characteristics and adaptations.
 
-Ele é dividido em 5 partes:
+It is divided into 5 parts:
 
-Home: Uma apresentação breve com um background de todas as versões do personagem.
+Home: A brief presentation with a background of all versions of the character.
 
-Sobre: Parte onde ele é apresentado com mais detalhes e as suas histórias mais marcantes.
+About: Part where he is presented in more detail and his most striking stories.
 
-Poderes: Uma parte onde apresento seus poderes e detalho junto com imagens/gifs.
+Powers: A part where I present your powers and detail them together with images/gifs.
 
-Filmes: Apresento suas adaptações cinematográficas e detalho cada um dos filmes já feitos do personagem.
+Films: I present his film adaptations and detail each of the character's films ever made.
 
-Jogos: Por meio de uma análise da evolução dos jogos digitais, mostro comno o personagem sempre esteve inserido nessa evolução.
+    Creation steps:
 
-- Etapas de criação:
+I organized the structures in the HTML and added the tags to edit the GRID in the CSS.
 
-Organizei as estruturas no HTML e adicionei as tags para editar a GRID no CSS.
+After that, I linked the pages in HEAD and edited them to be more uniform.
 
-Após isso, fiz os links das páginas na HEAD e editei para ficar mais uniforme.
+After that, I added the images and texts that I would use in the project.
 
-Após isso, fui adicionando as imagens e textos que utilizaria no projeto.
+I searched Google Fonts for a font that I liked and imposed it on Nunito.
 
-Pesquisei no Google Fonts uma fonte que fosse do agrado e impotei a Nunito.
+I researched SVG icons and added some for social media links.
 
-Pesquisei ícones SVG e adicionei alguns para links de redes sociais.
+    Technologies used:
 
-- Tecnologias utilizadas:
-
-Google Fonts;
-Flowbite;
-Tenor.
+Google Fonts; Flowbite; Tenor.
