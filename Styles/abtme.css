@@ -70,7 +70,16 @@ a:hover {
   box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
     0 0 100px #008cff;
 }
-
+.navigation-audio, audio {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+    list-style: none;
+    width: 100px;
+    height: 30px;
+    margin: none;
+    padding: none;
+}
 
 .alert{
 	width:80%;
