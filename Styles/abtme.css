@@ -97,6 +97,7 @@ a:hover {
 .wrapper {
 	text-align: Left; 
 	color: #fff;
+	padding:20px;
 }
 .wrapper h2 {
 	font-size: 5em;
