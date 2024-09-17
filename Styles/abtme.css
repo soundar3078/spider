@@ -103,6 +103,7 @@ a:hover {
 	font-size: 5em;
 	margin-bottom: 10px;
 	font-family: "Bebas Neue", sans-serif;
+	padding:10px;
 }
 .wrapper p {
 	font-size: 1.2em;
@@ -110,6 +111,7 @@ a:hover {
 	font-family: "Montserrat", sans-serif;
 	padding: 0 25px;
 	line-height: 1.5;
+	padding:10px;
 }
 .about-image {
 	max-width: 250px;
