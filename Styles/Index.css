@@ -129,7 +129,7 @@ footer {
 }
 
 .navigation-link {
-    font-weight: 300;
+    font-weight: 777;
     font-size: 18px;
     letter-spacing: 2px;
     text-decoration: none;
@@ -139,6 +139,7 @@ footer {
 
 .navigation-link:hover {
     color: var(--red);
+    font-size: 30px;
 }
 
 .navigation-link::after {
