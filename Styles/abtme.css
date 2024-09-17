@@ -98,7 +98,7 @@ a:hover {
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	background: linear-gradient(-45deg, #732222, #1635d1, #e61212, #fc0505);
+	background: linear-gradient(-45deg, #fb0404, #440de8, #fa0303, #fc0505);
 	background-size: 400% 400%;
 	animation: animate 1s infinite alternate;
 }
