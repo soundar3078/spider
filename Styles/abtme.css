@@ -118,6 +118,9 @@ a:hover {
 	border-radius: 50%;
 	border: 15px groove #fff;
 }
+font{
+	padding:25px;
+}
 @keyframes animate {
 	0% {
 		background-position: 0% 50%;
